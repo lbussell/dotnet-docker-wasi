@@ -13,12 +13,7 @@ TBD - or see the original .NET `wasiconsole` template README.
 ## Build
 
 ```bash
-docker buildx build \
-    --platform wasi/wasm \
-    --load \
-    -t wasiconsole \
-    -f ./wasiconsole/Dockerfile \
-    ./wasiconsole/
+docker buildx build --platform wasi/wasm --load -t wasiconsole https://github.com/lbussell/dotnet-docker-wasi.git#:wasiconsole
 ```
 
 ## Run using Docker Desktop
